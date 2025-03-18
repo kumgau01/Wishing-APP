@@ -12,7 +12,7 @@ function Wish() {
 
   useEffect(() => {
     document.title = "Happy Birthday Poulomi 🎂💖";
-    const bgMusic = new Audio("/romantic_guitar.mp3");
+    const bgMusic = new Audio(`${process.env.PUBLIC_URL}/romantic_guitar.mp3`);
     bgMusic.loop = true; // Loop music
     setAudio(bgMusic);
 
